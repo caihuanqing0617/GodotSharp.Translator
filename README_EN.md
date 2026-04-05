@@ -1,4 +1,4 @@
-# Godot CSharp RunTime Help Document Translated to Other Languages
+# Godot CSharp RunTime Document Translated to Other Languages
 
 Godot C# Runtime help documentation translated by large language models into various national languages.
 
