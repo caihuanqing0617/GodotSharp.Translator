@@ -12334,7 +12334,8 @@
         <para>可在<b>高级导入设置</b>对话框中使用其他选项（例如将单独的网格或材质提取为文件）。可通过在“文件系统”停靠面板中双击一个 3D 场景来访问该对话框，或在“文件系统”停靠面板中选中一个 3D 场景后，转到“导入”停靠面板并选择<b>高级</b></para>
         <para>
           <b>注意：</b>
-          <see cref="T:Godot.ResourceImporterScene" /> <i>不</i>用于 <see cref="T:Godot.PackedScene" />，例如 <c>.tscn</c> 和 <c>.scn</c> 文件</para>
+          <see cref="T:Godot.ResourceImporterScene" />
+          <i>不</i>用于 <see cref="T:Godot.PackedScene" />，例如 <c>.tscn</c> 和 <c>.scn</c> 文件</para>
       </summary>
     </member>
     <member name="M:Godot.ResourceImporterScene.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
@@ -12681,7 +12682,8 @@
       <summary>
         <para>从编辑器中注销 <see cref="T:Godot.EditorSyntaxHighlighter" /></para>
         <para>
-          <b>注意：</b> <see cref="T:Godot.EditorSyntaxHighlighter" /> 仍将应用于已经打开的脚本</para>
+          <b>注意：</b>
+          <see cref="T:Godot.EditorSyntaxHighlighter" /> 仍将应用于已经打开的脚本</para>
       </summary>
     </member>
     <member name="M:Godot.ScriptEditor.GotoLine(System.Int32)">

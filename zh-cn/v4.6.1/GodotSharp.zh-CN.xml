@@ -11821,7 +11821,7 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
       <param name="instance">要修改的字符串</param>
       <param name="what">要在字符串中被替换的子字符串</param>
       <param name="forwhat">替换 <paramref name="what" /> 的子字符串</param>
-      <returns>替换了子字符串出现项后的字符串</returns>
+      <returns>替换了子字符串出现位置后的字符串</returns>
     </member>
     <member name="M:Godot.StringExtensions.RFind(System.String,System.String,System.Int32,System.Boolean)">
       <summary>
@@ -21725,7 +21725,7 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
       <summary>
         <para>设置根窗口的背景颜色</para>
         <para>
-          <b>注意：</b> 此方法仅在 Android 上实现</para>
+          <b>注意：</b>此方法仅在 Android 上实现</para>
       </summary>
     </member>
     <member name="M:Godot.DisplayServer.AccessibilityShouldIncreaseContrast">
@@ -24465,7 +24465,7 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     </member>
     <member name="M:Godot.GraphEdit.IsNodeConnected(Godot.StringName,System.Int32,Godot.StringName,System.Int32)">
       <summary>
-        <para>如果 <paramref name="fromNode" /><see cref="T:Godot.GraphNode" /> 的 <paramref name="fromPort" /> 连接到了 <paramref name="toNode" /><see cref="T:Godot.GraphNode" /> 的 <paramref name="toPort" />，则返回 <see langword="true" /></para>
+        <para>如果 <paramref name="fromNode" /><see cref="T:Godot.GraphNode" /> 的 <paramref name="fromPort" /> 已连接到 <paramref name="toNode" /><see cref="T:Godot.GraphNode" /> 的 <paramref name="toPort" />，则返回 <see langword="true" /></para>
       </summary>
     </member>
     <member name="M:Godot.GraphEdit.DisconnectNode(Godot.StringName,System.Int32,Godot.StringName,System.Int32)">
@@ -27872,7 +27872,7 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     </member>
     <member name="F:Godot.RenderingDevice.DataFormat.B8G8R8A8Sscaled">
       <summary>
-        <para>每通道 8 位有符号浮点蓝/绿/红/alpha 通道数据格式，带缩放值（值会从整数转换为浮点数）。取值范围为 <c>[-127.0, 127.0]</c></para>
+        <para>每通道 8 位有符号浮点蓝/绿/红/阿尔法通道数据格式，带缩放值（值会从整数转换为浮点数）。取值范围为 <c>[-127.0, 127.0]</c></para>
       </summary>
     </member>
     <member name="F:Godot.RenderingDevice.DataFormat.B8G8R8A8Uint">
@@ -50370,7 +50370,7 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     </member>
     <member name="F:Godot.AudioEffectDistortion.MethodName.GetPreGain">
       <summary>
-            “get_pre_gain” 方法的缓存名称。
+                        “get_pre_gain” 方法的缓存名称。
             </summary>
     </member>
     <member name="F:Godot.AudioEffectDistortion.MethodName.SetKeepHfHz">
@@ -61870,7 +61870,7 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     </member>
     <member name="M:Godot.Bitmap.GetTrueBitCount">
       <summary>
-        <para>返回被设置为 <see langword="true" /> 的位图元素数量</para>
+        <para>返回设置为 <see langword="true" /> 的位图元素数量</para>
       </summary>
     </member>
     <member name="M:Godot.Bitmap.GetSize">
@@ -75303,7 +75303,7 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     </member>
     <member name="M:Godot.CharacterBody3D.GetLastSlideCollision">
       <summary>
-        <para>如果发生了碰撞，则返回一个 <see cref="T:Godot.KinematicCollision3D" />。返回的值包含在上一次调用 <see cref="M:Godot.CharacterBody3D.MoveAndSlide" /> 期间发生的最近一次碰撞的信息。如果没有发生碰撞，则返回 <see langword="null" />。另请参阅 <see cref="M:Godot.CharacterBody3D.GetSlideCollision(System.Int32)" /></para>
+        <para>如果发生了碰撞，则返回一个 <see cref="T:Godot.KinematicCollision3D" />。返回值包含了在上一次调用 <see cref="M:Godot.CharacterBody3D.MoveAndSlide" /> 期间发生的最近一次碰撞的信息。如果没有发生碰撞，则返回 <see langword="null" />。另请参阅 <see cref="M:Godot.CharacterBody3D.GetSlideCollision(System.Int32)" /></para>
       </summary>
     </member>
     <member name="M:Godot.CharacterBody3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
@@ -81522,7 +81522,7 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     </member>
     <member name="P:Godot.Control.MouseDefaultCursorShape">
       <summary>
-        <para>此控件的默认光标形状。适用于 Godot 插件，以及使用系统鼠标光标的应用程序或游戏</para>
+        <para>此控件的默认光标形状。对 Godot 插件以及使用系统鼠标光标的应用程序或游戏很有用</para>
         <para>
           <b>注意：</b> 在 Linux 上，形状可能会因系统的光标主题而有所不同</para>
       </summary>
@@ -82048,25 +82048,25 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     <member name="M:Godot.Control.GetThemeIcon(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中的第一个匹配 <see cref="T:Godot.Theme" /> 的 <see cref="T:Godot.Theme" /> 项目包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的图标项，则返回该图标</para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Control.GetThemeStylebox(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中的第一个匹配的 <see cref="T:Godot.Theme" /> 包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的样式盒（stylebox）项，则返回该 <see cref="T:Godot.Theme" /> 中的 <see cref="T:Godot.StyleBox" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Control.GetThemeFont(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中的第一个匹配的 <see cref="T:Godot.Theme" /> 包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的字体项，则返回该 <see cref="T:Godot.Theme" /> 中的 <see cref="T:Godot.Font" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Control.GetThemeFontSize(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中的第一个匹配 <see cref="T:Godot.Theme" /> 且该 <see cref="T:Godot.Theme" /> 具有由指定的 <paramref name="name" /> 和 <paramref name="themeType" /> 标识的字体大小项，则返回该字体大小</para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)">
@@ -82089,7 +82089,7 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     <member name="M:Godot.Control.GetThemeConstant(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中的第一个匹配的 <see cref="T:Godot.Theme" /> 具有带有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的常量项，则返回该 <see cref="T:Godot.Theme" /> 中的一个常量</para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Control.HasThemeIconOverride(Godot.StringName)">
@@ -82131,55 +82131,55 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     <member name="M:Godot.Control.HasThemeIcon(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中存在匹配的 <see cref="T:Godot.Theme" />，并且该主题包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的图标项，则返回 <see langword="true" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Control.HasThemeStylebox(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中存在匹配的 <see cref="T:Godot.Theme" />，并且该主题包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的样式盒项，则返回 <see langword="true" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Control.HasThemeFont(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中存在匹配的 <see cref="T:Godot.Theme" />，且其包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的字体项，则返回 <see langword="true" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Control.HasThemeFontSize(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中存在匹配的 <see cref="T:Godot.Theme" />，并且其包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的字体大小项，则返回 <see langword="true" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Control.HasThemeColor(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中存在匹配的 <see cref="T:Godot.Theme" />，且该主题包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的颜色项，则返回 <see langword="true" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Control.HasThemeConstant(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中存在匹配的 <see cref="T:Godot.Theme" />，且其包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的常量项，则返回 <see langword="true" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Control.GetThemeDefaultBaseScale">
       <summary>
         <para>如果该 <see cref="T:Godot.Theme" /> 具有有效的 <see cref="P:Godot.Theme.DefaultBaseScale" /> 值，则返回树中第一个匹配的 <see cref="T:Godot.Theme" /> 的默认基础缩放值</para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Control.GetThemeDefaultFont">
       <summary>
         <para>如果树中的第一个匹配的 <see cref="T:Godot.Theme" /> 具有有效的 <see cref="P:Godot.Theme.DefaultFont" /> 值，则返回该 <see cref="T:Godot.Theme" /> 的默认字体</para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Control.GetThemeDefaultFontSize">
       <summary>
         <para>如果树中的第一个匹配 <see cref="T:Godot.Theme" /> 具有有效的 <see cref="P:Godot.Theme.DefaultFontSize" /> 值，则返回该 <see cref="T:Godot.Theme" /> 的默认字体大小值</para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Control.GetParentControl">
@@ -89603,7 +89603,7 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
       <summary>
         <para>设置根窗口的背景颜色</para>
         <para>
-          <b>注意：</b> 此方法仅在 Android 上实现</para>
+          <b>注意：</b>此方法仅在 Android 上实现</para>
       </summary>
     </member>
     <member name="M:Godot.DisplayServerInstance.AccessibilityShouldIncreaseContrast">
@@ -92892,17 +92892,16 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
         <para>
           <b>注意：</b>这不会影响音频播放速度。使用 <see cref="P:Godot.AudioServer.PlaybackSpeedScale" /> 可独立于 <see cref="P:Godot.Engine.TimeScale" /> 调整音频播放速度</para>
         <para>
-          <b>注意：</b>这不会自动调整 <see cref="P:Godot.Engine.PhysicsTicksPerSecond" />。当值高于 <c>1.0</c> 时，物理模拟可能会变得不那么精确，因为每个物理刻都会延伸到更长的引擎时间周期内。如果你通过修改 <see cref="P:Godot.Engine.TimeScale" /> 来以较大倍数加速模拟，也请考虑同时提高 <see cref="P:Godot.Engine.PhysicsTicksPerSecond" />，以使模拟更加可靠</para>
+          <b>注意：</b> 这不会自动调整 <see cref="P:Godot.Engine.PhysicsTicksPerSecond" />。当该值高于 <c>1.0</c> 时，物理模拟的精确度可能会降低，因为每个物理 Tick 都会拉伸到更长的引擎时间段内。如果你正在修改 <see cref="P:Godot.Engine.TimeScale" /> 以大幅加速模拟，请同时考虑提高 <see cref="P:Godot.Engine.PhysicsTicksPerSecond" />，以使模拟更加可靠</para>
       </summary>
     </member>
     <member name="P:Godot.Engine.PhysicsJitterFix">
       <summary>
-        <para>与真实时间同步的物理帧刻有多少。如果为 <c>0</c> 或更小，则帧刻会完全同步。较高的值会使游戏内时钟与真实时钟的偏差更大，但会平滑帧率抖动</para>
+        <para>与真实时间同步的物理帧刻（ticks）数量。若为 <c>0</c> 或更小，则帧刻将完全同步。值越高，游戏内时钟与真实时钟的偏差越大，但能更平滑地消除帧率抖动</para>
         <para>
-          <b>注意：</b>
-          <c>0.5</c> 的默认值在大多数情况下已经足够；高于 <c>2</c> 的值可能会导致游戏对掉帧的反应出现明显延迟，因此不推荐</para>
+          <b>注意：</b>默认值 <c>0.5</c> 对于大多数情况已经足够；高于 <c>2</c> 的值可能会导致游戏对丢帧的反应出现明显延迟，因此不推荐使用</para>
         <para>
-          <b>注意：</b>当使用自定义物理插值方案，或在网络游戏中时，建议通过将此属性设置为 <c>0</c> 来禁用物理抖动修正</para>
+          <b>注意：</b>当使用自定义物理插值方案，或在网络游戏中时，建议将此属性设置为 <c>0</c> 以禁用物理抖动修正。</para>
       </summary>
     </member>
     <member name="M:Godot.Engine.GetPhysicsInterpolationFraction">
@@ -92914,7 +92913,7 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
       <summary>
         <para>返回自引擎启动以来绘制的总帧数</para>
         <para>
-          <b>注意：</b>在无头平台上，或者通过命令行使用 <c>--disable-render-loop</c> 禁用渲染时，此方法始终返回 <c>0</c>。另请参阅 <see cref="M:Godot.Engine.GetProcessFrames" /></para>
+          <b>注意：</b>在无头平台上，或通过命令行使用 <c>--disable-render-loop</c> 禁用渲染时，此方法始终返回 <c>0</c>。另请参阅 <see cref="M:Godot.Engine.GetProcessFrames" /></para>
       </summary>
     </member>
     <member name="M:Godot.Engine.GetFramesPerSecond">
@@ -92924,8 +92923,8 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     </member>
     <member name="M:Godot.Engine.GetPhysicsFrames">
       <summary>
-        <para>返回自引擎启动以来经过的总帧数。该数字会在每个<b>物理帧</b>时递增。另请参阅 <see cref="M:Godot.Engine.GetProcessFrames" /></para>
-        <para>此方法可用于在不依赖 <see cref="T:Godot.Timer" /> 的情况下，降低高开销逻辑的执行频率：</para>
+        <para>返回自引擎启动以来经过的总帧数。该数字会在每个<b>物理帧</b>时递增。另请参阅<see cref="M:Godot.Engine.GetProcessFrames" /></para>
+        <para>此方法可用于在不依赖 <see cref="T:Godot.Timer" /> 的情况下，减少高开销逻辑的执行频率：</para>
         <para>
           <code>
             public override void _PhysicsProcess(double delta)
@@ -92943,8 +92942,8 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     </member>
     <member name="M:Godot.Engine.GetProcessFrames">
       <summary>
-        <para>返回自引擎启动以来经过的总帧数。无论渲染循环是否启用，该数字都会在每个<b>处理帧</b>时增加。另请参阅 <see cref="M:Godot.Engine.GetFramesDrawn" /> 和 <see cref="M:Godot.Engine.GetPhysicsFrames" /></para>
-        <para>此方法可用于在不依赖 <see cref="T:Godot.Timer" /> 的情况下，降低高开销逻辑的执行频率：</para>
+        <para>返回自引擎启动以来经过的总帧数。无论渲染循环是否启用，此数值都会在每个<b>处理帧</b>时递增。另请参阅 <see cref="M:Godot.Engine.GetFramesDrawn" /> 和 <see cref="M:Godot.Engine.GetPhysicsFrames" /></para>
+        <para>此方法可用于在不依赖 <see cref="T:Godot.Timer" /> 的情况下，减少高开销逻辑的执行频率：</para>
         <para>
           <code>
             public override void _Process(double delta)
@@ -92962,14 +92961,14 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     </member>
     <member name="M:Godot.Engine.GetMainLoop">
       <summary>
-        <para>返回 <see cref="T:Godot.MainLoop" /> 的实例。这通常是主 <see cref="T:Godot.SceneTree" />，并且与 <see cref="M:Godot.Node.GetTree" /> 相同</para>
+        <para>返回 <see cref="T:Godot.MainLoop" /> 的实例。它通常是主 <see cref="T:Godot.SceneTree" />，并且与 <see cref="M:Godot.Node.GetTree" /> 相同</para>
         <para>
-          <b>注意：</b>作为主循环实例化的类型可以通过 <c>ProjectSettings.application/run/main_loop_type</c> 更改</para>
+          <b>注意：</b> 作为主循环实例化的类型可以通过 <c>ProjectSettings.application/run/main_loop_type</c> 进行更改</para>
       </summary>
     </member>
     <member name="M:Godot.Engine.GetVersionInfo">
       <summary>
-        <para>返回当前引擎版本信息，作为一个 <see cref="T:Godot.Collections.Dictionary" />，其中包含以下条目：</para>
+        <para>返回当前引擎版本信息，形式为一个 <see cref="T:Godot.Collections.Dictionary" />，其中包含以下条目：</para>
         <para>- <c>major</c> - 主版本号，类型为 int；</para>
         <para>- <c>minor</c> - 次版本号，类型为 int；</para>
         <para>- <c>补丁</c> - 作为 int 的补丁版本号；</para>
@@ -93480,12 +93479,11 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     </member>
     <member name="P:Godot.EngineInstance.PhysicsJitterFix">
       <summary>
-        <para>与真实时间同步的物理帧刻有多少。如果为 <c>0</c> 或更小，则帧刻会完全同步。较高的值会使游戏内时钟与真实时钟的偏差更大，但会平滑帧率抖动</para>
+        <para>与真实时间同步的物理帧刻（ticks）数量。若为 <c>0</c> 或更小，则帧刻将完全同步。值越高，游戏内时钟与真实时钟的偏差越大，但能更平滑地消除帧率抖动</para>
         <para>
-          <b>注意：</b>
-          <c>0.5</c> 的默认值在大多数情况下已经足够；高于 <c>2</c> 的值可能会导致游戏对掉帧的反应出现明显延迟，因此不推荐</para>
+          <b>注意：</b>默认值 <c>0.5</c> 对于大多数情况已经足够；高于 <c>2</c> 的值可能会导致游戏对丢帧的反应出现明显延迟，因此不推荐使用</para>
         <para>
-          <b>注意：</b>当使用自定义物理插值方案，或在网络游戏中时，建议通过将此属性设置为 <c>0</c> 来禁用物理抖动修正</para>
+          <b>注意：</b>当使用自定义物理插值方案，或在网络游戏中时，建议将此属性设置为 <c>0</c> 以禁用物理抖动修正。</para>
       </summary>
     </member>
     <member name="M:Godot.EngineInstance.GetPhysicsInterpolationFraction">
@@ -93508,7 +93506,7 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     <member name="M:Godot.EngineInstance.GetPhysicsFrames">
       <summary>
         <para>返回自引擎启动以来经过的总帧数。该数值会在每个<b>物理帧</b>时递增。另请参阅 <see cref="M:Godot.EngineInstance.GetProcessFrames" /></para>
-        <para>此方法可用于在不依赖 <see cref="T:Godot.Timer" /> 的情况下，降低高开销逻辑的执行频率：</para>
+        <para>此方法可用于在不依赖 <see cref="T:Godot.Timer" /> 的情况下，减少高开销逻辑的执行频率：</para>
         <para>
           <code>
             public override void _PhysicsProcess(double delta)
@@ -93527,7 +93525,7 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     <member name="M:Godot.EngineInstance.GetProcessFrames">
       <summary>
         <para>返回自引擎启动以来经过的总帧数。无论渲染循环是否启用，此数字都会在每个<b>处理帧</b>中增加。另请参阅 <see cref="M:Godot.EngineInstance.GetFramesDrawn" /> 和 <see cref="M:Godot.EngineInstance.GetPhysicsFrames" /></para>
-        <para>此方法可用于在不依赖 <see cref="T:Godot.Timer" /> 的情况下，降低高开销逻辑的执行频率：</para>
+        <para>此方法可用于在不依赖 <see cref="T:Godot.Timer" /> 的情况下，减少高开销逻辑的执行频率：</para>
         <para>
           <code>
             public override void _Process(double delta)
@@ -93545,14 +93543,14 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     </member>
     <member name="M:Godot.EngineInstance.GetMainLoop">
       <summary>
-        <para>返回 <see cref="T:Godot.MainLoop" /> 的实例。这通常是主 <see cref="T:Godot.SceneTree" />，并且与 <see cref="M:Godot.Node.GetTree" /> 相同</para>
+        <para>返回 <see cref="T:Godot.MainLoop" /> 的实例。它通常是主 <see cref="T:Godot.SceneTree" />，并且与 <see cref="M:Godot.Node.GetTree" /> 相同</para>
         <para>
-          <b>注意：</b>作为主循环实例化的类型可以通过 <c>ProjectSettings.application/run/main_loop_type</c> 更改</para>
+          <b>注意：</b> 作为主循环实例化的类型可以通过 <c>ProjectSettings.application/run/main_loop_type</c> 进行更改</para>
       </summary>
     </member>
     <member name="M:Godot.EngineInstance.GetVersionInfo">
       <summary>
-        <para>返回当前引擎版本信息，作为一个 <see cref="T:Godot.Collections.Dictionary" />，其中包含以下条目：</para>
+        <para>返回当前引擎版本信息，形式为一个 <see cref="T:Godot.Collections.Dictionary" />，其中包含以下条目：</para>
         <para>- <c>major</c> - 主版本号，类型为 int；</para>
         <para>- <c>minor</c> - 次版本号，类型为 int；</para>
         <para>- <c>补丁</c> - 作为 int 的补丁版本号；</para>
@@ -97548,7 +97546,7 @@ ANSI 转义码，以便终端模拟器显示。当前仅在 Linux 和 macOS 上�
     </member>
     <member name="F:Godot.FastNoiseLite.PropertyName.DomainWarpFractalGain">
       <summary>
-            “domain_warp_fractal_gain” 属性的缓存名称。
+                        “domain_warp_fractal_gain” 属性的缓存名称。
             </summary>
     </member>
     <member name="T:Godot.FastNoiseLite.MethodName">
@@ -110278,7 +110276,7 @@ The <see cref="T:Godot.FogVolume" /> 的密度。密度越高的对象越不透�
     </member>
     <member name="F:Godot.Generic6DofJoint3D.Param.LinearLimitSoftness">
       <summary>
-        <para>应用于各轴移动的系数。数值越小，移动越慢</para>
+        <para>应用于各轴移动的系数。值越低，移动越慢</para>
       </summary>
     </member>
     <member name="F:Godot.Generic6DofJoint3D.Param.LinearRestitution">
@@ -112574,7 +112572,7 @@ The <see cref="T:Godot.FogVolume" /> 的密度。密度越高的对象越不透�
     </member>
     <member name="F:Godot.GradientTexture2D.RepeatEnum.Mirror">
       <summary>
-        <para>纹理从 <see cref="P:Godot.GradientTexture2D.FillFrom" /> 到 <see cref="P:Godot.GradientTexture2D.FillTo" /> 偏移开始填充，并在两个方向上镜像该图案</para>
+        <para>纹理从 <see cref="P:Godot.GradientTexture2D.FillFrom" /> 到 <see cref="P:Godot.GradientTexture2D.FillTo" /> 的偏移量开始填充，并在两个方向上镜像该图案</para>
       </summary>
     </member>
     <member name="P:Godot.GradientTexture2D.Gradient">
@@ -124722,7 +124720,7 @@ The <see cref="T:Godot.FogVolume" /> 的密度。密度越高的对象越不透�
         <para>
           <b>注意：</b>如果 <paramref name="fullPrecision" /> 为 <see langword="true" />，则在将浮点数转换为字符串时，除了可靠数字外，还会将不可靠数字一并转换为字符串，以保证精确解码</para>
         <para>
-          <paramref name="indent" /> 参数用于控制是否以及如何对内容进行缩进；在输出中需要缩进的位置将使用其内容。即使是像 <c>"   "</c> 这样的空格也可以生效。还可以使用 <c>\t</c> 作为制表符缩进，或使用 <c>\n</c> 在每次缩进时分别生成换行</para>
+          <paramref name="indent" /> 参数控制某些内容是否缩进以及如何缩进；在输出中需要缩进的位置将使用其内容。即使是像 <c>"   "</c> 这样的空格也可以生效。<c>\t</c> 和 <c>\n</c> 也可以分别用于制表符缩进，或为每个缩进创建一个换行</para>
         <para>
           <b>警告：</b> JSON 不支持非有限数。任何出现的 <c>@GDScript.INF</c> 都将被替换为 <c>1e99999</c>，负的 <c>@GDScript.INF</c> 将被替换为 <c>-1e99999</c>，但大多数 JSON 解析器会将它们正确解释为无穷大。<c>@GDScript.NAN</c> 将被替换为 <see langword="null" />，并且 JSON 解析器不会将其解释为 NaN。如果你预计会出现非有限数，请考虑先通过 <see cref="M:Godot.Json.FromNative(Godot.Variant,System.Boolean)" /> 处理你的数据</para>
         <para>
@@ -134723,7 +134721,7 @@ Lightmap 烘焙失败，因为无法访问正在编辑的场景的根节点。
     </member>
     <member name="F:Godot.MenuBar.MethodName.SetMenuTitle">
       <summary>
-            用于“set_menu_title”方法的缓存名称。
+                        ‘set_menu_title’ 方法的缓存名称。
             </summary>
     </member>
     <member name="F:Godot.MenuBar.MethodName.GetMenuTitle">
@@ -139448,7 +139446,7 @@ Lightmap 烘焙失败，因为无法访问正在编辑的场景的根节点。
     </member>
     <member name="P:Godot.MultiplayerSynchronizer.ReplicationInterval">
       <summary>
-        <para>同步之间的时间间隔。当复制设置为 <see cref="F:Godot.SceneReplicationConfig.ReplicationMode.Always" /> 时使用。若设置为 <c>0.0</c>（默认值），则每个网络处理帧都会进行同步</para>
+        <para>同步之间的时间间隔。当复制设置为 <see cref="F:Godot.SceneReplicationConfig.ReplicationMode.Always" /> 时使用。如果设置为 <c>0.0</c>（默认值），则每个网络处理帧都会进行同步</para>
       </summary>
     </member>
     <member name="P:Godot.MultiplayerSynchronizer.DeltaInterval">
@@ -163069,7 +163067,7 @@ Lightmap 烘焙失败，因为无法访问正在编辑的场景的根节点。
     </member>
     <member name="P:Godot.OpenXRFrameSynthesisExtension.RelaxFrameInterval">
       <summary>
-        <para>如果 <see langword="true" />，这会通知 XR 运行时我们将以大幅降低的速率提供帧。当你预计应用程序将以较低帧率运行并希望注入多个重投影帧时，请启用此项</para>
+        <para>如果 <see langword="true" />，这会通知 XR 运行时我们将以大幅降低的速率提供帧。当你预计应用程序将以较低帧率运行，并且希望注入多个重投影帧时，请启用此项</para>
       </summary>
     </member>
     <member name="M:Godot.OpenXRFrameSynthesisExtension.IsAvailable">
@@ -164418,7 +164416,7 @@ Lightmap 烘焙失败，因为无法访问正在编辑的场景的根节点。
     </member>
     <member name="F:Godot.OpenXRInterface.HandJoints.RingIntermediate">
       <summary>
-        <para>无名指中节指骨关节</para>
+        <para>无名指指骨中间关节</para>
       </summary>
     </member>
     <member name="F:Godot.OpenXRInterface.HandJoints.RingDistal">
@@ -175334,7 +175332,7 @@ Lightmap 烘焙失败，因为无法访问正在编辑的场景的根节点。
     </member>
     <member name="M:Godot.PhysicsDirectBodyState2D.SetConstantTorque(System.Single)">
       <summary>
-        <para>设置物体在每次物理更新期间施加的总恒定旋转力</para>
+        <para>设置该物体在每次物理更新期间施加的总恒定旋转力</para>
         <para>参见 <see cref="M:Godot.PhysicsDirectBodyState2D.AddConstantTorque(System.Single)" />.】【</para>
       </summary>
     </member>
@@ -176459,7 +176457,7 @@ Lightmap 烘焙失败，因为无法访问正在编辑的场景的根节点。
     </member>
     <member name="M:Godot.PhysicsDirectBodyState3D.SetConstantTorque(Godot.Vector3)">
       <summary>
-        <para>设置物体在每次物理更新期间施加的总恒定旋转力</para>
+        <para>设置该物体在每次物理更新期间施加的总恒定旋转力</para>
         <para>参见 <see cref="M:Godot.PhysicsDirectBodyState3D.AddConstantTorque(Godot.Vector3)" />.</para>
       </summary>
     </member>
@@ -184296,7 +184294,7 @@ Lightmap 烘焙失败，因为无法访问正在编辑的场景的根节点。
     </member>
     <member name="M:Godot.PhysicsServer3D.BodySetConstantTorque(Godot.Rid,Godot.Vector3)">
       <summary>
-        <para>设置物体在每次物理更新期间施加的总恒定旋转力</para>
+        <para>设置该物体在每次物理更新期间施加的总恒定旋转力</para>
         <para>参见 <see cref="M:Godot.PhysicsServer3D.BodyAddConstantTorque(Godot.Rid,Godot.Vector3)" />.</para>
       </summary>
     </member>
@@ -186091,7 +186089,7 @@ Lightmap 烘焙失败，因为无法访问正在编辑的场景的根节点。
     </member>
     <member name="M:Godot.PhysicsServer3DInstance.BodySetConstantTorque(Godot.Rid,Godot.Vector3)">
       <summary>
-        <para>设置物体在每次物理更新期间施加的总恒定旋转力</para>
+        <para>设置该物体在每次物理更新期间施加的总恒定旋转力</para>
         <para>参见 <see cref="M:Godot.PhysicsServer3DInstance.BodyAddConstantTorque(Godot.Rid,Godot.Vector3)" /></para>
       </summary>
     </member>
@@ -209280,7 +209278,7 @@ A Polygon2D 由一组点定义。每个点与下一个点相连，最后一个�
     </member>
     <member name="F:Godot.RenderingServer.MethodName.InstancesCullRay">
       <summary>
-            “instances_cull_ray” 方法的缓存名称。
+                        “instances_cull_ray” 方法的缓存名称。
             </summary>
     </member>
     <member name="F:Godot.RenderingServer.MethodName.InstancesCullConvex">
@@ -214890,7 +214888,7 @@ A Polygon2D 由一组点定义。每个点与下一个点相连，最后一个�
     </member>
     <member name="F:Godot.RenderingServerInstance.MethodName.InstancesCullRay">
       <summary>
-            “instances_cull_ray” 方法的缓存名称。
+                        “instances_cull_ray” 方法的缓存名称。
             </summary>
     </member>
     <member name="F:Godot.RenderingServerInstance.MethodName.InstancesCullConvex">
@@ -218701,7 +218699,7 @@ A Polygon2D 由一组点定义。每个点与下一个点相连，最后一个�
     </member>
     <member name="P:Godot.RigidBody3D.ContinuousCd">
       <summary>
-        <para>如果<see langword="true" />，则使用连续碰撞检测</para>
+        <para>如果 <see langword="true" />，则使用连续碰撞检测</para>
         <para>连续碰撞检测会尝试预测运动中的物体将在何处发生碰撞，而不是先移动它，再在其发生碰撞时修正其运动。连续碰撞检测更精确，并且更不容易漏掉由小型、高速运动物体造成的碰撞。不使用连续碰撞检测的计算速度更快，但可能会漏掉小型、高速运动的物体</para>
       </summary>
     </member>
@@ -231550,7 +231548,7 @@ A Polygon2D 由一组点定义。每个点与下一个点相连，最后一个�
     </member>
     <member name="P:Godot.SpringBoneCollisionSphere3D.Radius">
       <summary>
-        <para>球体的半径。</para>
+        <para>球体的半径</para>
       </summary>
     </member>
     <member name="P:Godot.SpringBoneCollisionSphere3D.Inside">
@@ -254793,7 +254791,7 @@ A Polygon2D 由一组点定义。每个点与下一个点相连，最后一个�
     </member>
     <member name="F:Godot.TileSet.CellNeighbor.RightCorner">
       <summary>
-        <para>右角中的邻居</para>
+        <para>右上角的邻居</para>
       </summary>
     </member>
     <member name="F:Godot.TileSet.CellNeighbor.BottomRightSide">
@@ -262746,7 +262744,7 @@ A Polygon2D 由一组点定义。每个点与下一个点相连，最后一个�
     </member>
     <member name="F:Godot.Upnp.MethodName.AddDevice">
       <summary>
-            “add_device” 方法的缓存名称。
+                        ‘add_device’ 方法的缓存名称。
             </summary>
     </member>
     <member name="F:Godot.Upnp.MethodName.SetDevice">
@@ -265090,7 +265088,7 @@ A Polygon2D 由一组点定义。每个点与下一个点相连，最后一个�
     </member>
     <member name="F:Godot.Viewport.VrsModeEnum.Disabled">
       <summary>
-        <para>Variable Rate Shading 已被禁用</para>
+        <para>可变速率着色已禁用</para>
       </summary>
     </member>
     <member name="F:Godot.Viewport.VrsModeEnum.Texture">
@@ -280864,25 +280862,25 @@ A Polygon2D 由一组点定义。每个点与下一个点相连，最后一个�
     <member name="M:Godot.Window.GetThemeIcon(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中的第一个匹配 <see cref="T:Godot.Theme" /> 的 <see cref="T:Godot.Theme" /> 项目包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的图标项，则返回该图标</para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Window.GetThemeStylebox(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中的第一个匹配的 <see cref="T:Godot.Theme" /> 包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的样式盒（stylebox）项，则返回该 <see cref="T:Godot.Theme" /> 中的 <see cref="T:Godot.StyleBox" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Window.GetThemeFont(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中的第一个匹配的 <see cref="T:Godot.Theme" /> 包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的字体项，则返回该 <see cref="T:Godot.Theme" /> 中的 <see cref="T:Godot.Font" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Window.GetThemeFontSize(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中的第一个匹配 <see cref="T:Godot.Theme" /> 且该 <see cref="T:Godot.Theme" /> 具有由指定的 <paramref name="name" /> 和 <paramref name="themeType" /> 标识的字体大小项，则返回该字体大小</para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Window.GetThemeColor(Godot.StringName,Godot.StringName)">
@@ -280936,55 +280934,55 @@ A Polygon2D 由一组点定义。每个点与下一个点相连，最后一个�
     <member name="M:Godot.Window.HasThemeIcon(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中存在匹配的 <see cref="T:Godot.Theme" />，并且该主题包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的图标项，则返回 <see langword="true" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Window.HasThemeStylebox(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中存在匹配的 <see cref="T:Godot.Theme" />，并且该主题包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的样式盒项，则返回 <see langword="true" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Window.HasThemeFont(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中存在匹配的 <see cref="T:Godot.Theme" />，且其包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的字体项，则返回 <see langword="true" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Window.HasThemeFontSize(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中存在匹配的 <see cref="T:Godot.Theme" />，并且其包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的字体大小项，则返回 <see langword="true" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Window.HasThemeColor(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中存在匹配的 <see cref="T:Godot.Theme" />，且该主题包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的颜色项，则返回 <see langword="true" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Window.HasThemeConstant(Godot.StringName,Godot.StringName)">
       <summary>
         <para>如果树中存在匹配的 <see cref="T:Godot.Theme" />，且其包含具有指定 <paramref name="name" /> 和 <paramref name="themeType" /> 的常量项，则返回 <see langword="true" /></para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Window.GetThemeDefaultBaseScale">
       <summary>
         <para>如果该 <see cref="T:Godot.Theme" /> 具有有效的 <see cref="P:Godot.Theme.DefaultBaseScale" /> 值，则返回树中第一个匹配的 <see cref="T:Godot.Theme" /> 的默认基础缩放值</para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Window.GetThemeDefaultFont">
       <summary>
         <para>如果树中的第一个匹配的 <see cref="T:Godot.Theme" /> 具有有效的 <see cref="P:Godot.Theme.DefaultFont" /> 值，则返回该 <see cref="T:Godot.Theme" /> 的默认字体</para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Window.GetThemeDefaultFontSize">
       <summary>
         <para>如果树中的第一个匹配 <see cref="T:Godot.Theme" /> 具有有效的 <see cref="P:Godot.Theme.DefaultFontSize" /> 值，则返回该 <see cref="T:Godot.Theme" /> 的默认字体大小值</para>
-        <para>有关详细信息，请参阅 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
+        <para>详见 <see cref="M:Godot.Control.GetThemeColor(Godot.StringName,Godot.StringName)" /></para>
       </summary>
     </member>
     <member name="M:Godot.Window.GetWindowId">
@@ -283518,7 +283516,7 @@ A Polygon2D 由一组点定义。每个点与下一个点相连，最后一个�
     </member>
     <member name="P:Godot.XRBodyModifier3D.BoneUpdate">
       <summary>
-        <para>指定要对骨骼执行的更新类型。</para>
+        <para>指定要对骨骼执行的更新类型</para>
       </summary>
     </member>
     <member name="M:Godot.XRBodyModifier3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
@@ -285414,7 +285412,7 @@ A Polygon2D 由一组点定义。每个点与下一个点相连，最后一个�
     </member>
     <member name="P:Godot.XRHandModifier3D.BoneUpdate">
       <summary>
-        <para>指定要对骨骼执行的更新类型。</para>
+        <para>指定要对骨骼执行的更新类型</para>
       </summary>
     </member>
     <member name="M:Godot.XRHandModifier3D.InvokeGodotClassMethod(Godot.NativeInterop.godot_string_name@,Godot.NativeInterop.NativeVariantPtrArgs,Godot.NativeInterop.godot_variant@)">
@@ -285611,7 +285609,7 @@ A Polygon2D 由一组点定义。每个点与下一个点相连，最后一个�
     </member>
     <member name="F:Godot.XRHandTracker.HandJoint.RingFingerPhalanxIntermediate">
       <summary>
-        <para>无名指中节指骨关节</para>
+        <para>无名指指骨中间关节</para>
       </summary>
     </member>
     <member name="F:Godot.XRHandTracker.HandJoint.RingFingerPhalanxDistal">
