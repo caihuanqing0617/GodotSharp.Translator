@@ -29,29 +29,35 @@ show_godot_version_menu() {
   echo "======================="
   echo "     Godot Version"
   echo "======================="
-  echo "1. Godot 4.6.2"
-  echo "2. Godot 4.6.1"
-  echo "3. Godot 4.6.0"
+  echo "1. Godot 4.6.3"
+  echo "2. Godot 4.6.2"
+  echo "3. Godot 4.6.1"
+  echo "4. Godot 4.6.0"
   echo "======================="
 }
 
 select_godot_version() {
   while true; do
     show_godot_version_menu
-    read -r -p "Please select a godot version...(1-3): " choice
+    read -r -p "Please select a godot version...(1-4): " choice
 
     case "$choice" in
       1)
-        GodotVersion="4.6.2"
+        GodotVersion="4.6.3"
         NetFramework="net8.0"
         return 0
         ;;
       2)
-        GodotVersion="4.6.1"
+        GodotVersion="4.6.2"
         NetFramework="net8.0"
         return 0
         ;;
       3)
+        GodotVersion="4.6.1"
+        NetFramework="net8.0"
+        return 0
+        ;;
+      4)
         GodotVersion="4.6.0"
         NetFramework="net8.0"
         return 0
