@@ -21,7 +21,7 @@ Documentation d’aide du runtime C# de Godot, traduite vers d’autres langues 
 
 ## Instructions d’utilisation
 
-### Cloner ce projet avec Git
+### Git Clone la branche de version spécifiée ou la branche de version la plus récente actuelle
 
 - Sous Windows :
     1. Exécutez `./Run.bat` à la racine de ce projet

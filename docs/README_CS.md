@@ -21,7 +21,7 @@ Dokumentace nápovědy pro runtime Godot C#, přeložená do jiných zemí pomoc
 
 ## Pokyny k použití
 
-### Naklonujte tento projekt pomocí Git
+### Git Clone zadanou větev verze nebo aktuální nejnovější větev verze
 
 - Ve Windows:
     1. Spusťte `./Run.bat` v kořenovém adresáři tohoto projektu

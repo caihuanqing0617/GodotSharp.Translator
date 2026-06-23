@@ -21,7 +21,7 @@ Hilfedokumentation für die Godot-C#-Laufzeitumgebung, mithilfe eines großen Sp
 
 ## Anleitung
 
-### Dieses Projekt mit Git klonen
+### Git klonen Sie den angegebenen Versionszweig oder den aktuellen neuesten Versionszweig
 
 - Unter Windows:
     1. Führen Sie `./Run.bat` im Stammverzeichnis dieses Projekts aus
