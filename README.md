@@ -55,13 +55,14 @@ Godot C#运行库的帮助文档，用大语言模型翻译到其它国家
 
 5. 备份你的 GodotSharp.xml 和 GodotSharpEditor.xml 且删除
 
-6. 把找到的 GodotSharp.?.xml 重命名为 GodotSharp.xml 和 GodotSharpEditor.?.xml 重命名为 GodotSharpEditor.xml  且复制到该目录
+6. 把找到的 GodotSharp.?.xml 重命名为 GodotSharp.xml 和 GodotSharpEditor.?.xml 重命名为 GodotSharpEditor.xml
+   且复制到该目录
 
 7. 完成 然后打开你的项目就可看到你所对应的语言了
 
 ## 最近更新
 
--
+- 如果有修改意见请提出来
 
 ## 💳 赞赏支持
 
@@ -70,3 +71,4 @@ Godot C#运行库的帮助文档，用大语言模型翻译到其它国家
 | 微信赞赏 |
 | :--------: |
 | ![微信赞赏](images/reward_qrcode.png) |
+赞赏时记得留下【GitHub昵称】和【留言】
