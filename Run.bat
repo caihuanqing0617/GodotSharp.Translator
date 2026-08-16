@@ -7,12 +7,19 @@ cls
 echo =======================
 echo      Godot Version
 echo =======================
-echo 1. Godot 4.7.0
+echo 1. Godot 4.7.1
+echo 2. Godot 4.7.0
 echo ======================
 
-set /p "choice=Please select a godot version...(1-4): "
+set /p "choice=Please select a godot version...(1-2): "
 
 if "%choice%"=="1" (
+	set "GodotVersion=4.7.1"
+	set "NetFramework=net8.0"
+    	goto languageOption
+)
+
+if "%choice%"=="2" (
 	set "GodotVersion=4.7.0"
 	set "NetFramework=net8.0"
     	goto languageOption
